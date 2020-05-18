@@ -2,6 +2,7 @@ from django.contrib.auth import login, authenticate, logout
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
+from django.views.decorators.cache import cache_control
 
 
 def signup(request):
@@ -38,6 +39,7 @@ def signin(request):
         return render(request, 'user/signin.html')
 
 
+@cache_control(no_cache=True, must_revalidate=True)
 def signout(request):
     logout(request)
     return HttpResponseRedirect('/signin')
