@@ -35,12 +35,14 @@
           <form class="form-container" action="signin" method="post">
 
             {% csrf_token %}
+
             <div class="form-group">
-              <p class="h4 mb-4">Sign in</p>
-              <label style="color: red;" >{{message}}</label>
+              <p class="h1 mb-4 ">Sign in</p>
+              <p class="h6 mb-4" style="color: red;">{{message}}</p>
               <label for="exampleInputEmail1">Email Username</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username" placeholder="Enter Username" />
-<!--              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                     name="username" placeholder="Enter Username"/>
+              <!--              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>

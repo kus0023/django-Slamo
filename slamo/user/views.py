@@ -1,4 +1,4 @@
-from django.contrib.auth import login, authenticate
+from django.contrib.auth import login, authenticate, logout
 from django.http import HttpResponseRedirect
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
@@ -32,7 +32,12 @@ def signin(request):
                 login(request, user)
                 return HttpResponseRedirect('/main')
         else:
-            message = 'Username and password are incorrect'
+            message = 'Username or password is incorrect'
             return render(request, 'user/signin.html', context={'message': message})
     else:
         return render(request, 'user/signin.html')
+
+
+def signout(request):
+    logout(request)
+    return HttpResponseRedirect('/signin')
