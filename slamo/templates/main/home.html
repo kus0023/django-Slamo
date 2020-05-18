@@ -1,0 +1,169 @@
+{% extends 'main/base.html' %}
+
+{% block style %}
+<style>
+      .mask.flex-center{
+        font-weight: bold;
+        font-family: cursive;
+      }
+      hr {
+        height: 8px;
+
+        background-image: linear-gradient(90deg, cyan, transparent);
+
+        border: 0;
+        height: 3px;
+      }
+
+</style>
+{% endblock %}
+
+{% block content %}
+<!---------------------------------------Image Slider--------------------------------------------->
+<div id="slide" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+        <li data-target="#slide" data-slide-to="0" class="active"></li>
+        <li data-target="#slide" data-slide-to="1"></li>
+        <li data-target="#slide" data-slide-to="2"></li>
+        <li data-target="#slide" data-slide-to="3"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img style="width:100%;" src="https://images.pexels.com/photos/163185/old-retro-antique-vintage-163185.jpeg"
+                 alt="">
+            <div class="carousel-caption">
+                <h1 class="display-2 bg-gradient-primary ">Create</h1>
+                <p class="lead">When the world is so complicated, the simple gift of friendship is within all of our
+                    hands.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img style="width:100%;" src="https://images.pexels.com/photos/1007025/pexels-photo-1007025.jpeg" alt="">
+            <div class="carousel-caption">
+                <h1 class="display-2 text-dark">View</h1>
+                <p class="lead text-dark">Truly great friends are hard to find, difficult to leave, and impossible to
+                    forget.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img style="width:100%;" src="https://images.pexels.com/photos/3815729/pexels-photo-3815729.jpeg" alt="">
+            <div class="carousel-caption ">
+                <h1 class="display-4 text-white ">Manage</h1>
+                <p class="lead">True friends are never apart, maybe in distance but never in heart.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img style="width:100%;" src="https://images.pexels.com/photos/92904/pexels-photo-92904.jpeg" alt="">
+            <div class="carousel-caption">
+                <h1 class="display-2"></h1>
+                <p class="lead"></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!---------------------------------------Image Slider--------------------------------------------->
+
+<blockquote class="blockquote text-center">
+    <p class="mb-0">I would rather walk with a friend in the dark, than alone in the light</p>
+    <footer class="blockquote-footer"> Helen Keller <cite title="Source Title"></cite></footer>
+</blockquote>
+
+<!---------------------------------------jumbotron-------------------------------------------->
+
+<div class="jumbotron jumbotron-fluid mb-5" style="background: black !important">
+    <div class="container">
+        <div class="row d-flex flex-column flex-md-row justify-content-around align-content-center">
+
+            <div class="col-12 col-md-3 mt-2 mb-2 mt-md-0 mb-md-0 view align-self-center">
+                <a href="#">
+                    <img src="https://images.pexels.com/photos/851213/pexels-photo-851213.jpeg"
+                         class="img-fluid img-thumbnail" style="background-color: cyan;" alt="">
+                    <div class="mask flex-center">
+                        <p class="text-white h1-responsive ">Create</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-3 mt-2 mb-2 mt-md-0 mb-md-0 view align-self-center">
+                <a href="#">
+                    <img src="https://images.pexels.com/photos/1610992/pexels-photo-1610992.jpeg"
+                         class="img-fluid img-thumbnail" style="background-color: cyan;" alt="">
+                    <div class="mask flex-center">
+                        <p class="text-white h1-responsive">View</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-3 mt-2 mb-2 mt-md-0 mb-md-0 view align-self-center">
+                <a href="#">
+                    <img src="https://images.pexels.com/photos/1541216/pexels-photo-1541216.jpeg"
+                         class="img-fluid img-thumbnail" style="background-color: cyan;" alt="">
+                    <div class="mask flex-center">
+                        <p class="text-white h1-responsive">Manage</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!---------------------------------------jumbotron-------------------------------------------->
+
+<!---------------------------------------About us-------------------------------------------->
+
+<div class="container mt-5 mb-5 shadow">
+    <div class="row p-2 " id="aboutus">
+
+        <div class="col-12">
+            <h1 class="h1-responsive">About Us</h1>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row p-2 d-flex  flex-column flex-md-row  justify-content-center align-content-center">
+        <div class="col-3 mt-auto mb-auto">
+            <img src="https://scontent.flko3-1.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/34984529_2059070284415676_1579416812276154368_n.jpg?_nc_cat=104&_nc_sid=85a577&efg=eyJpIjoidCJ9&_nc_ohc=kNImjV6WBD4AX-uBuKs&_nc_ht=scontent.flko3-1.fna&_nc_tp=14&oh=dc94f2c93679a890cd8262acd60114c0&oe=5EE17582"
+                 class="img-fluid img-thumbnail">
+        </div>
+
+        <div class="col-9">
+            <h1 class="h1-responsive">Avantika Verma</h1>
+            <p class="lead">I don't know what to write</p>
+        </div>
+
+    </div>
+    <hr>
+    <div class="row p-2 d-flex  flex-column-reverse flex-md-row  justify-content-center align-content-center">
+
+        <div class="col-9">
+            <h1 class="h1-responsive">Shweta Singh</h1>
+            <p class="lead">I don't know what to write</p>
+        </div>
+
+        <div class="col-3 mt-auto mb-auto">
+            <img src="https://instagram.flko3-1.fna.fbcdn.net/v/t51.2885-15/e35/68733734_467583457154882_5044177749012628551_n.jpg?_nc_ht=instagram.flko3-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=6j-Bj2qAJ38AX_w92dR&oh=1e7f9d7bd13a08bcfad5646ead965d57&oe=5EE82EC7"
+                 class="img-fluid img-thumbnail">
+        </div>
+
+    </div>
+    <hr>
+    <div class="row p-2 d-flex  flex-column flex-md-row  justify-content-center align-content-center">
+        <div class="col-3 mt-auto mb-auto">
+            <img src="https://scontent.flko3-1.fna.fbcdn.net/v/t1.0-9/71465811_1101842336679368_7491034163840024576_n.jpg?_nc_cat=104&_nc_sid=110474&_nc_ohc=JK5X_oGsJg4AX9bvJZN&_nc_ht=scontent.flko3-1.fna&oh=c5ee6f1498e82b410074b1972125faf8&oe=5EE07A8F"
+                 class="img-fluid img-thumbnail">
+        </div>
+
+        <div class="col-9">
+            <h1 class="h1-responsive">Kumar Utsav Singh</h1>
+            <p class="lead">I don't know what to write</p>
+        </div>
+
+    </div>
+
+</div>
+
+<!---------------------------------------About US-------------------------------------------->
+
+{% endblock %}
