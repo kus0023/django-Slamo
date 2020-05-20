@@ -8,3 +8,7 @@ def main(request):
     if request.user.is_authenticated:
         return render(request, 'main/home.html')
     return HttpResponseRedirect('/')
+
+
+def sendSlam(request):
+    return render(request, 'main/send-slam.html')

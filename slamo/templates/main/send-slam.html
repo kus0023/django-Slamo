@@ -1,0 +1,55 @@
+{% extends 'main/base.html' %}
+{% block title %}Send{% endblock %}
+
+{% block content %}
+<!---------------------------------------Content-------------------------------------------->
+
+
+<!-- send view create -->
+<div class="container mt-5">
+    <div class="col-12">
+        <label class="display-4 col-12" style="background-color: whitesmoke;">Questions</label>
+        <hr/>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnChecked2" checked disabled/>
+                <label class="custom-control-label h4" for="defaultChecked2">Default checked</label>
+            </div>
+        </li>
+
+        <li class="list-group-item">
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultUnChecked3" checked disabled/>
+                <label class="custom-control-label h4" for="defaultChecked3">Default checked</label>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="container mt-4 mb-5">
+    <div class="col-12">
+        <label class="display-4 col-12" style="background-color: whitesmoke;">Add Your Questions</label>
+        <hr/>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultChecked2" checked/>
+                <label class="custom-control-label h4" for="defaultChecked2">Default checked</label>
+            </div>
+        </li>
+
+        <li class="list-group-item">
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="defaultChecked3" checked/>
+                <label class="custom-control-label h4" for="defaultChecked3">Default checked</label>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+<!---------------------------------------Content-------------------------------------------->
+{% endblock %}
