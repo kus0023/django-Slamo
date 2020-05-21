@@ -1,3 +1,4 @@
+
 {% extends 'user/base.html' %}
 
 {% block title %}Change Password{% endblock %}
@@ -9,11 +10,12 @@
     <div class="row justify-content-center">
         <div class="col-12 col-sm-6 col-md-4">
 
-            <h3>Change password</h3>
-            <form method="post">
+
+            <form class="form-container" method="post">
                 {% csrf_token %}
+                <p class="h4 mb-4">Change password</p>
                 {{ form.as_p }}
-                <button type="submit">Change password</button>
+                <button class="btn btn-info my-4 btn-block" type="submit">Change password</button>
             </form>
         </div>
     </div>
