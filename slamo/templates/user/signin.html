@@ -1,22 +1,17 @@
-{% extends 'user/base.html' %}
-
-{% block title %}SignIn{% endblock %}
-
-{% block content %}
+{% extends 'user/base.html' %} {% block title %}SignIn{% endblock %} {% block content %}
 <div class="container-fluid bg">
-  <div class="row justify-content-center">
+  <div class="row d-flex justify-content-center">
     <div class="col-12 col-sm-6 col-md-4">
-      <form class="form-container" action="signin" method="post">
-
+      <form class="form-container" style="top: 15vh; width: 400px;" action="signin" method="post">
         {% csrf_token %}
 
         <div class="form-group">
-          <p class="h1 mb-4 ">Sign in</p>
+          <p class="h1 mb-4">Sign in</p>
           <p class="h6 mb-4" style="color: red;">{{message}}</p>
-          <label for="exampleInputEmail1">Email Username</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                 name="username" placeholder="Enter Username"/>
-          <!--              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+          <label for="exampleInputEmail1">Username</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username"
+                 placeholder="Enter Username"/>
+          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
@@ -33,7 +28,7 @@
           <label class="form-check-label" for="exampleCheck1">Show</label>
         </div>
         <button type="submit" class="btn btn-primary btn-block mt-3">Submit</button>
-        <div class="form-text mt-2">
+        <div class="form-text mt-5">
           <p>
             Not a member?
             <a href="signup">Register</a>
@@ -44,4 +39,3 @@
   </div>
 </div>
 {% endblock %}
-

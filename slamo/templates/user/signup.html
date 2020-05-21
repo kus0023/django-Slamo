@@ -1,9 +1,4 @@
-
-{% extends 'user/base.html' %}
-
-{% block title %}Signup{% endblock %}
-
-{% block content %}
+{% extends 'user/base.html' %} {% block title %}Signup{% endblock %} {% block content %}
 
 <div class="container-fluid bg">
     <div class="row justify-content-center">
@@ -24,7 +19,7 @@
                                name="last_name"/>
                     </div>
                 </div>
-                <input type="text" class="form-control mb-4 " placeholder="Username" name="username"/>
+                <input type="text" class="form-control mb-4" placeholder="Username" name="username"/>
                 <!-- E-mail -->
                 <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail"
                        name="email"/>
@@ -41,7 +36,6 @@
                     Again Enter Your Password
                 </small>
 
-
                 <!-- Sign up button -->
                 <button class="btn btn-info my-4 btn-block" type="submit">Sign in</button>
 
@@ -54,18 +48,17 @@
 
                 <a href="#" class="mx-2" role="button"><i class="fab fa-google light-blue-text"></i></a>
                 <!-- <a href="#" class="mx-2" role="button"><i class="fab fa-twitter light-blue-text"></i></a>
-                        <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
-                        <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a> -->
+                                <a href="#" class="mx-2" role="button"><i class="fab fa-linkedin-in light-blue-text"></i></a>
+                                <a href="#" class="mx-2" role="button"><i class="fab fa-github light-blue-text"></i></a> -->
 
                 <hr/>
 
                 <!-- Terms of service -->
                 <!-- <p>By clicking
-                        <em>Sign up</em> you agree to our
-                        <a href="" target="_blank">terms of service</a> -->
+                                <em>Sign up</em> you agree to our
+                                <a href="" target="_blank">terms of service</a> -->
             </form>
         </div>
     </div>
 </div>
 {% endblock %}
-
