@@ -12,3 +12,4 @@ def main(request):
 
 def sendSlam(request):
     return render(request, 'main/send-slam.html')
+#test

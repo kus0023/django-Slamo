@@ -35,11 +35,10 @@
 <div class="container-fluid bg animated fadeOut" id="email-div">
     <div class="row justify-content-center">
         <div class="col-12 col-sm-6 col-md-4">
-            <form id="email-form" class="form-container border border-light p-5" action="home.html">
+            <form id="email-form" class="form-container border border-light p-5"  method="post">
                 <p class="h4 mb-4 text-center">Forget Your Password?</p>
-
-                <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail"/>
-
+                {% csrf_token %}
+                {{ form }}
                 <button id="send-otp-button" class="btn btn-info btn-block my-4" type="submit">Send OTP</button>
 
                 <p>
