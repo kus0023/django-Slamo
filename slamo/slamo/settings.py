@@ -134,9 +134,12 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_ROOT = "/static/"
-EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST='smtp.gmail.com'
-EMAIL_PORT=587
-EMAIL_USE_TLS=True
-EMAIL_HOST_USER='alexmethew6@gmail.com'
-EMAIL_HOST_PASSWORD='Aa@12345678'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'alexmethew6@gmail.com'
+EMAIL_HOST_PASSWORD = 'Aa@12345678'
+
+SOCIAL_AUTH_FACEBOOK_KEY = '687611222058610'  # App ID
+SOCIAL_AUTH_FACEBOOK_SECRET = '4abd3292806e0580d6d5f4c2a64915a2'
