@@ -22,4 +22,7 @@ urlpatterns = [
                   path('admin/', admin.site.urls),
                   path('main/', include('main.urls')),
                   path('', include('user.urls')),
+                  path('oauth2/', include('social_django.urls', namespace='social')),
               ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+
